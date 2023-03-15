@@ -1,0 +1,586 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Aim &#8212; DSCI 310: Historical Horse Population in Canada</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'jbook_example';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    <p class="title logo__title">DSCI 310: Historical Horse Population in Canada</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Aim
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/jbook_example.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Aim</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Aim</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#results">Results</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="aim">
+<h1>Aim<a class="headerlink" href="#aim" title="Permalink to this heading">#</a></h1>
+<p>This project explores the historical population of horses in Canada
+between 1906 and 1972 for each province.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data">
+<h1>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h1>
+<p>Horse population data were sourced from the <a class="reference external" href="http://open.canada.ca/en/open-data">Government of Canada’s Open Data website</a>.
+Specifically, <span id="id1">[]</span> 1 and <span id="id2">[]</span> 2.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="methods">
+<h1>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">#</a></h1>
+<p>The R programming language (R Core Team, 2019) and the following R packages were used
+to perform the analysis: knitr (Xie, 2014), tidyverse (Wickham, 2017), and
+bookdown (Xie, 2016)
+<em>Note: this report is adapted from (Timbers, 2020).</em></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="results">
+<h1>Results<a class="headerlink" href="#results" title="Permalink to this heading">#</a></h1>
+<figure class="align-default">
+<img alt="_images/horse_pops_plot.png" src="_images/horse_pops_plot.png" />
+</figure>
+<p>Fig. 1 Horse populations for all provinces in Canada from 1906 - 1972</p>
+<p>We can see from Fig. 1
+that Ontario, Saskatchewan and Alberta have had the highest horse populations in Canada.
+All provinces have had a decline in horse populations since 1940.
+This is likely due to the rebound of the Canadian automotive
+industry after the Great Depression and the Second World War.
+An interesting follow-up visualisation would be car sales per year for each
+Province over the time period visualised above to further support this hypothesis.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">horses_sd</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../../results/horses_sd.csv&quot;</span><span class="p">)</span>
+
+<span class="n">largest_sd_prov</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">horses_sd</span><span class="p">[</span><span class="s1">&#39;Province&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;largest-sd-prov&quot;</span><span class="p">,</span> <span class="n">largest_sd_prov</span><span class="p">)</span>
+
+<span class="n">horses_sd_noindex</span> <span class="o">=</span> <span class="n">horses_sd</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide_index</span><span class="p">()</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;horses-tbl&quot;</span><span class="p">,</span> <span class="n">horses_sd_noindex</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Saskatchewan&#39;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Julia Liao\AppData\Local\Temp\ipykernel_6176\765628425.py:6: FutureWarning: this method is deprecated in favour of `Styler.hide(axis=&quot;index&quot;)`
+  horses_sd_noindex = horses_sd.style.hide_index()
+</pre></div>
+</div>
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_e23c6">
+  <thead>
+    <tr>
+      <th id="T_e23c6_level0_col0" class="col_heading level0 col0" >Province</th>
+      <th id="T_e23c6_level0_col1" class="col_heading level0 col1" >Std</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_e23c6_row0_col0" class="data row0 col0" >Saskatchewan</td>
+      <td id="T_e23c6_row0_col1" class="data row0 col1" >377265.575896</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row1_col0" class="data row1 col0" >Ontario</td>
+      <td id="T_e23c6_row1_col1" class="data row1 col1" >266435.317269</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row2_col0" class="data row2 col0" >Alberta</td>
+      <td id="T_e23c6_row2_col1" class="data row2 col1" >266063.191824</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row3_col0" class="data row3 col0" >Manitoba</td>
+      <td id="T_e23c6_row3_col1" class="data row3 col1" >122403.871037</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row4_col0" class="data row4 col0" >Quebec</td>
+      <td id="T_e23c6_row4_col1" class="data row4 col1" >111411.104370</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row5_col0" class="data row5 col0" >New Brunswick</td>
+      <td id="T_e23c6_row5_col1" class="data row5 col1" >22019.494316</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row6_col0" class="data row6 col0" >Nova Scotia</td>
+      <td id="T_e23c6_row6_col1" class="data row6 col1" >19879.253759</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row7_col0" class="data row7 col0" >British Columbia</td>
+      <td id="T_e23c6_row7_col1" class="data row7 col1" >14945.664171</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row8_col0" class="data row8 col0" >P.E.I.</td>
+      <td id="T_e23c6_row8_col1" class="data row8 col1" >11355.747559</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>Suppose we were interested in looking in more closely at the
+province with the highest spread (in terms of standard deviation)
+of horse populations. We present the standard deviations here:</p>
+<figure class="align-default" id="horses-tbl-fig" style="width: 500px">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_e23c6">
+  <thead>
+    <tr>
+      <th id="T_e23c6_level0_col0" class="col_heading level0 col0" >Province</th>
+      <th id="T_e23c6_level0_col1" class="col_heading level0 col1" >Std</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_e23c6_row0_col0" class="data row0 col0" >Saskatchewan</td>
+      <td id="T_e23c6_row0_col1" class="data row0 col1" >377265.575896</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row1_col0" class="data row1 col0" >Ontario</td>
+      <td id="T_e23c6_row1_col1" class="data row1 col1" >266435.317269</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row2_col0" class="data row2 col0" >Alberta</td>
+      <td id="T_e23c6_row2_col1" class="data row2 col1" >266063.191824</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row3_col0" class="data row3 col0" >Manitoba</td>
+      <td id="T_e23c6_row3_col1" class="data row3 col1" >122403.871037</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row4_col0" class="data row4 col0" >Quebec</td>
+      <td id="T_e23c6_row4_col1" class="data row4 col1" >111411.104370</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row5_col0" class="data row5 col0" >New Brunswick</td>
+      <td id="T_e23c6_row5_col1" class="data row5 col1" >22019.494316</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row6_col0" class="data row6 col0" >Nova Scotia</td>
+      <td id="T_e23c6_row6_col1" class="data row6 col1" >19879.253759</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row7_col0" class="data row7 col0" >British Columbia</td>
+      <td id="T_e23c6_row7_col1" class="data row7 col1" >14945.664171</td>
+    </tr>
+    <tr>
+      <td id="T_e23c6_row8_col0" class="data row8 col0" >P.E.I.</td>
+      <td id="T_e23c6_row8_col1" class="data row8 col1" >11355.747559</td>
+    </tr>
+  </tbody>
+</table>
+</div></figure>
+<p>Table 1: Standard deviation of number of horses for each province between 1940 - 1972</p>
+<p>Note that we define standard deviation (of a sample) as:</p>
+<div class="math notranslate nohighlight">
+\[s = sqrt{sum_{i = 1}^n(x_i - \bar{x})} / {n-1}.\]</div>
+<p>Additionally, note that in Fig 2. we
+consider the sample standard deviation of the number of horses
+during the same time span as Fig. 1.</p>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="_images/horse_pop_plot_largest_sd.png"><img alt="_images/horse_pop_plot_largest_sd.png" src="_images/horse_pop_plot_largest_sd.png" style="width: 200px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Horse populations for the province with the largest standard deviation</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In <code class="xref std std-numref docutils literal notranslate"><span class="pre">Fig.</span> <span class="pre">{number}</span></code> we zoom in
+on the province of ?, which had the largest spread of values in
+terms of standard deviation.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Aim</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#results">Results</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Tiffany Timbers & Jordan Bourak
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
