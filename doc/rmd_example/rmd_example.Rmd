@@ -1,7 +1,7 @@
 ---
 title: 'DSCI 310: Historical Horse Population in Canada'
 author: "Tiffany Timbers & Jordan Bourak"
-output:
+output: 
   bookdown::html_document2
   bookdown::pdf_document2
 bibliography: references.bib  
@@ -43,7 +43,7 @@ knitr::kable(horses_sd_table, caption = "Standard deviation of horse population 
 
 Note that we define standard deviation (of a sample) as
 
-$$s = sqrt( sum_{i = 1}^n(x_i - \bar{x}) / (n-1))$$
+$$s = \sqrt( \sum_{i = 1}^n(x_i - \bar{x}) / (n-1))$$
 
 Additionally, note that in Table \@ref(tab:sd-table) we consider the sample standard deviation of the number of horses during the same time span as Figure \@ref(fig:horse-pops-plot).
 

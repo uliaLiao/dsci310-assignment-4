@@ -84,7 +84,7 @@
         
 
 \title{DSCI 310: Historical Horse Population in Canada}
-\date{Mar 15, 2023}
+\date{Mar 16, 2023}
 \release{}
 \author{Tiffany Timbers \& Jordan Bourak}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -110,17 +110,17 @@ between 1906 and 1972 for each province.
 
 \sphinxAtStartPar
 Horse population data were sourced from the \sphinxhref{http://open.canada.ca/en/open-data}{Government of Canada’s Open Data website}.
-Specifically, {[}{]} 1 and {[}{]} 2.
+Specifically, {[}\hyperlink{cite.jbook_example:id14}{the Government of Canada, 2017}{]} 1 and {[}\hyperlink{cite.jbook_example:id15}{the Government of Canada, 2017}{]} 2.
 
 \begin{DUlineblock}{0em}
 \item[] \sphinxstylestrong{\large Methods}
 \end{DUlineblock}
 
 \sphinxAtStartPar
-The R programming language (R Core Team, 2019) and the following R packages were used
-to perform the analysis: knitr (Xie, 2014), tidyverse (Wickham, 2017), and
-bookdown (Xie, 2016)
-\sphinxstyleemphasis{Note: this report is adapted from (Timbers, 2020).}
+The R programming language {[}\hyperlink{cite.jbook_example:id9}{R Core Team, 2019}{]} and the following R packages were used
+to perform the analysis: knitr {[}\hyperlink{cite.jbook_example:id13}{Xie, 2014}{]}, tidyverse {[}\hyperlink{cite.jbook_example:id12}{Wickham, 2017}{]}, and
+bookdown {[}\hyperlink{cite.jbook_example:id11}{Xie, 2016}{]}.
+\sphinxstyleemphasis{Note: this report is adapted from {[}\hyperlink{cite.jbook_example:id10}{Timbers, 2020}{]}.}
 
 \begin{DUlineblock}{0em}
 \item[] \sphinxstylestrong{\large Results}
@@ -128,15 +128,13 @@ bookdown (Xie, 2016)
 
 \begin{figure}[htbp]
 \centering
+\capstart
 
 \noindent\sphinxincludegraphics{{horse_pops_plot}.png}
-\end{figure}
+\caption{Horse populations for all provinces in Canada from 1906 \sphinxhyphen{} 1972}\label{\detokenize{jbook_example:horse-pops}}\end{figure}
 
 \sphinxAtStartPar
-Fig. 1 Horse populations for all provinces in Canada from 1906 \sphinxhyphen{} 1972
-
-\sphinxAtStartPar
-We can see from Fig. 1
+We can see from \hyperref[\detokenize{jbook_example:horse-pops}]{Figure \ref{\detokenize{jbook_example:horse-pops}}: \nameref{\detokenize{jbook_example:horse-pops}}}
 that Ontario, Saskatchewan and Alberta have had the highest horse populations in Canada.
 All provinces have had a decline in horse populations since 1940.
 This is likely due to the rebound of the Canadian automotive
@@ -166,12 +164,12 @@ Province over the time period visualised above to further support this hypothesi
 \end{sphinxVerbatim}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-C:\PYGZbs{}Users\PYGZbs{}Julia Liao\PYGZbs{}AppData\PYGZbs{}Local\PYGZbs{}Temp\PYGZbs{}ipykernel\PYGZus{}6176\PYGZbs{}765628425.py:6: FutureWarning: this method is deprecated in favour of `Styler.hide(axis=\PYGZdq{}index\PYGZdq{})`
+C:\PYGZbs{}Users\PYGZbs{}Julia Liao\PYGZbs{}AppData\PYGZbs{}Local\PYGZbs{}Temp\PYGZbs{}ipykernel\PYGZus{}9844\PYGZbs{}765628425.py:6: FutureWarning: this method is deprecated in favour of `Styler.hide(axis=\PYGZdq{}index\PYGZdq{})`
   horses\PYGZus{}sd\PYGZus{}noindex = horses\PYGZus{}sd.style.hide\PYGZus{}index()
 \end{sphinxVerbatim}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYGZlt{}pandas.io.formats.style.Styler at 0x1ff34167c70\PYGZgt{}
+\PYGZlt{}pandas.io.formats.style.Styler at 0x172eb4cb100\PYGZgt{}
 \end{sphinxVerbatim}
 
 \end{sphinxuseclass}\end{sphinxVerbatimOutput}
@@ -186,7 +184,7 @@ of horse populations. We present the standard deviations here:
 \centering
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYGZlt{}pandas.io.formats.style.Styler at 0x1ff34167c70\PYGZgt{}
+\PYGZlt{}pandas.io.formats.style.Styler at 0x172eb4cb100\PYGZgt{}
 \end{sphinxVerbatim}
 \end{figure}
 
@@ -196,7 +194,7 @@ Table 1: Standard deviation of number of horses for each province between 1940 \
 \sphinxAtStartPar
 Note that we define standard deviation (of a sample) as:
 \begin{equation*}
-\begin{split}s = sqrt{sum_{i = 1}^n(x_i - \bar{x})} / {n-1}.\end{split}
+\begin{split}s = \sqrt{\sum_{i = 1}^n(x_i - \bar{x})} / {n-1}.\end{split}
 \end{equation*}
 \sphinxAtStartPar
 Additionally, note that in Fig 2. we
@@ -208,12 +206,36 @@ during the same time span as Fig. 1.
 \capstart
 
 \noindent\sphinxincludegraphics[width=200\sphinxpxdimen]{{horse_pop_plot_largest_sd}.png}
-\caption{Horse populations for the province with the largest standard deviation}\label{\detokenize{jbook_example:id3}}\end{figure}
+\caption{Horse populations for the province with the largest standard deviation}\label{\detokenize{jbook_example:large-sd}}\end{figure}
 
 \sphinxAtStartPar
-In \sphinxcode{\sphinxupquote{Fig. \{number\}}} we zoom in
+In \hyperref[\detokenize{jbook_example:large-sd}]{Figure \ref{\detokenize{jbook_example:large-sd}}: \nameref{\detokenize{jbook_example:large-sd}}} we zoom in
 on the province of ?, which had the largest spread of values in
 terms of standard deviation.
+
+\begin{sphinxthebibliography}{RCTeam19}
+\bibitem[tGoC17a]{jbook_example:id14}
+\sphinxAtStartPar
+the Government of Canada. Horses, number on farms at june 1 and at december 1. Open Government \sphinxhyphen{} Open Data, 2017. URL: \sphinxurl{https://open.canada.ca/data/en/dataset/a3ecf553-8ec4-4551-a0fe-8df1472c6cf7}.
+\bibitem[tGoC17b]{jbook_example:id15}
+\sphinxAtStartPar
+the Government of Canada. Horses, number on farms at june 1, farm value per head and total farm value. Open Government \sphinxhyphen{} Open Data, 2017. URL: \sphinxurl{https://open.canada.ca/data/en/dataset/e175ef9c-98f0-49b3-8131-ca0e3895a0cb}.
+\bibitem[Tim20]{jbook_example:id10}
+\sphinxAtStartPar
+Tiffany Timbers. Historical horse population in canada. 2020. URL: \sphinxurl{https://github.com/ttimbers/equine\_numbers\_value\_canada\_parameters}.
+\bibitem[Wic17]{jbook_example:id12}
+\sphinxAtStartPar
+Hadley Wickham. \sphinxstyleemphasis{tidyverse: Easily Install and Load the 'Tidyverse'}. 2017. R package version 1.2.1. URL: \sphinxurl{https://CRAN.R-project.org/package=tidyverse}.
+\bibitem[Xie14]{jbook_example:id13}
+\sphinxAtStartPar
+Yihui Xie. \sphinxstyleemphasis{knitr: A Comprehensive Tool for Reproducible Research in R}. Chapman and Hall/CRC, 2014. ISBN 978\sphinxhyphen{}1466561595. URL: \sphinxurl{http://www.crcpress.com/product/isbn/9781466561595}.
+\bibitem[Xie16]{jbook_example:id11}
+\sphinxAtStartPar
+Yihui Xie. \sphinxstyleemphasis{bookdown: Authoring Books and Technical Documents with R Markdown}. Chapman and Hall/CRC, Boca Raton, Florida, 2016. ISBN 978\sphinxhyphen{}1138700109. URL: \sphinxurl{https://bookdown.org/yihui/bookdown}.
+\bibitem[RCTeam19]{jbook_example:id9}
+\sphinxAtStartPar
+R Core Team. \sphinxstyleemphasis{R: A Language and Environment for Statistical Computing}. R Foundation for Statistical Computing, Vienna, Austria, 2019. URL: \sphinxurl{https://www.R-project.org/}.
+\end{sphinxthebibliography}
 
 
 

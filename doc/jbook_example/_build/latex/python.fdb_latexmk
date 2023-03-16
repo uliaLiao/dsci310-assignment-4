@@ -1,11 +1,11 @@
 # Fdb version 4
-["makeindex python.idx"] 1678918584 "python.idx" "python.ind" "python" 1678920162 0
-  "python.idx" 1678919819 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex python.idx"] 1678918584 "python.idx" "python.ind" "python" 1679000423 0
+  "python.idx" 1679000419 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "python.ilg"
   "python.ind"
   (rewritten before read)
-["pdflatex"] 1678919764 "python.tex" "python.pdf" "python" 1678920162 2
+["pdflatex"] 1679000411 "python.tex" "python.pdf" "python" 1679000423 0
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1673497944 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1673497945 916 f87d7c45f9c908e672703b83b72241a3 ""
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1673497945 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -163,6 +163,7 @@
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/tuenc.def" 1673497949 26445 9ed4a9401f29cbb58ef6909cd5aec01f ""
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bbm-macros/bbm.sty" 1673498255 1644 1e0d54b051369c3f457872824cac219f ""
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/capt-of/capt-of.sty" 1673498256 1311 063f8536a047a2d9cb1803321f793f37 ""
+  "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/changepage/changepage.sty" 1678987905 4523 a9044e2dc40e764dac60d2acda7ae919 ""
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cmap/cmap.sty" 1673498258 3574 ddc11a0ae1c579d351ed20d2319ad422 ""
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1673497949 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1673498262 18450 88279bf67c81e69f8e3f1c1bad1a26c5 ""
@@ -239,17 +240,16 @@
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/web2c/texmf.cnf" 1673497950 40171 cdab547de63d26590bebb3baff566530 ""
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-var/web2c/xetex/xelatex.fmt" 1677088067 8714480 0371c1e81715ad8f01b45ff06292e928 ""
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf.cnf" 1673497975 956 3c30d803d50a80731379075439bae0c7 ""
-  "changepage.sty" 0 -1 0 ""
   "horse_pop_plot_largest_sd.png" 1678915080 84317 d52428a1a1a42c2d4344c702918bf364 ""
   "horse_pops_plot.png" 1678915080 141245 9c51f444a5db87f80b3e997ff25592d4 ""
   "jupyterBook.cls" 1678915066 2881 d7be52eb557699167c5a8617d29c1b64 ""
-  "python.aux" 1678920159 1132 2079282231b6ba5056ff8336eac0b927 "pdflatex"
+  "python.aux" 1679000421 1913 71559e60e5e37a8a24bdd0ec1fe0442b "pdflatex"
   "python.ind" 1678918584 0 d41d8cd98f00b204e9800998ecf8427e "makeindex python.idx"
-  "python.out" 1678919820 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "python.tex" 1678919763 7760 700bf4efad2da959dee947cf5b085400 ""
-  "python.toc" 1678920159 27 50aaf3219a1905d3848a099856397c61 "pdflatex"
+  "python.out" 1679000421 48 39bf9232deee5050524d86174d09af0b "pdflatex"
+  "python.tex" 1679000401 10331 911fe4da407a8479400e6acf1c479b5b ""
+  "python.toc" 1679000421 81 99c8d2db86b47f23c6e31cb1e9ffb40e "pdflatex"
   "sphinx.sty" 1678915062 12780 919e6ba449302e2597e7722681a087c6 ""
-  "sphinxhighlight.sty" 1678919762 6785 76d10c62e0f0661410b46f5db6118e26 ""
+  "sphinxhighlight.sty" 1679000400 6785 76d10c62e0f0661410b46f5db6118e26 ""
   "sphinxlatexadmonitions.sty" 1678915062 6238 2d867d769abf3f72abc17ef52adff78b ""
   "sphinxlatexcontainers.sty" 1678915062 901 d3a3a1b7b2547f47ade2499350b5c420 ""
   "sphinxlatexgraphics.sty" 1678915062 4840 a9578332b6f3b35e198751fb632c9b79 ""
@@ -264,7 +264,7 @@
   "sphinxlatexstyletext.sty" 1678915062 6177 c18841ce3fafc366cd3b145f8faa4c37 ""
   "sphinxlatextables.sty" 1678915062 21848 2827eb0b11b99b185a8b77317d3e131c ""
   "sphinxmanual.cls" 1678915062 4241 7b0d7a37df7b5715fb0dbd585c52ecdb ""
-  "sphinxmessages.sty" 1678919763 765 3f5fcd6cdd7964ed608767954a8ced6f ""
+  "sphinxmessages.sty" 1679000401 765 3f5fcd6cdd7964ed608767954a8ced6f ""
   "sphinxoptionsgeometry.sty" 1678915062 2061 47bb34b8ed8a78823eb0c886abfb9f4d ""
   "sphinxoptionshyperref.sty" 1678915062 1094 79beb8b8a3f10784f8cce804e0f9d3aa ""
   "sphinxpackagefootnote.sty" 1678915062 15217 dd26fe418b6fb1b26b18f042a7f43d40 ""
