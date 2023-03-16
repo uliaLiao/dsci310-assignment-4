@@ -151,7 +151,7 @@ Province over the time period visualised above to further support this hypothesi
 \PYG{n}{largest\PYGZus{}sd\PYGZus{}prov} \PYG{o}{=} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{horses\PYGZus{}sd}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Province}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}
 \PYG{n}{glue}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{largest\PYGZhy{}sd\PYGZhy{}prov}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{largest\PYGZus{}sd\PYGZus{}prov}\PYG{p}{)}
 
-\PYG{n}{horses\PYGZus{}sd\PYGZus{}noindex} \PYG{o}{=} \PYG{n}{horses\PYGZus{}sd}\PYG{o}{.}\PYG{n}{style}\PYG{o}{.}\PYG{n}{hide\PYGZus{}index}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{horses\PYGZus{}sd\PYGZus{}noindex} \PYG{o}{=} \PYG{n}{horses\PYGZus{}sd}\PYG{o}{.}\PYG{n}{style}\PYG{o}{.}\PYG{n}{hide}\PYG{p}{(}\PYG{n}{axis}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{index}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
 \PYG{n}{glue}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{horses\PYGZhy{}tbl}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{horses\PYGZus{}sd\PYGZus{}noindex}\PYG{p}{)}
 \end{sphinxVerbatim}
 
@@ -164,12 +164,7 @@ Province over the time period visualised above to further support this hypothesi
 \end{sphinxVerbatim}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-C:\PYGZbs{}Users\PYGZbs{}Julia Liao\PYGZbs{}AppData\PYGZbs{}Local\PYGZbs{}Temp\PYGZbs{}ipykernel\PYGZus{}9844\PYGZbs{}765628425.py:6: FutureWarning: this method is deprecated in favour of `Styler.hide(axis=\PYGZdq{}index\PYGZdq{})`
-  horses\PYGZus{}sd\PYGZus{}noindex = horses\PYGZus{}sd.style.hide\PYGZus{}index()
-\end{sphinxVerbatim}
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYGZlt{}pandas.io.formats.style.Styler at 0x172eb4cb100\PYGZgt{}
+\PYGZlt{}pandas.io.formats.style.Styler at 0x141ef713d30\PYGZgt{}
 \end{sphinxVerbatim}
 
 \end{sphinxuseclass}\end{sphinxVerbatimOutput}
@@ -182,14 +177,12 @@ of horse populations. We present the standard deviations here:
 
 \begin{figure}[htbp]
 \centering
+\capstart
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYGZlt{}pandas.io.formats.style.Styler at 0x172eb4cb100\PYGZgt{}
+\PYGZlt{}pandas.io.formats.style.Styler at 0x141ef713d30\PYGZgt{}
 \end{sphinxVerbatim}
-\end{figure}
-
-\sphinxAtStartPar
-Table 1: Standard deviation of number of horses for each province between 1940 \sphinxhyphen{} 1972
+\caption{Standard deviation of number of horses for each province between 1940 \sphinxhyphen{} 1972}\label{\detokenize{jbook_example:horses-tbl-fig}}\end{figure}
 
 \sphinxAtStartPar
 Note that we define standard deviation (of a sample) as:
@@ -197,20 +190,20 @@ Note that we define standard deviation (of a sample) as:
 \begin{split}s = \sqrt{\sum_{i = 1}^n(x_i - \bar{x})} / {n-1}.\end{split}
 \end{equation*}
 \sphinxAtStartPar
-Additionally, note that in Fig 2. we
+Additionally, note that in \hyperref[\detokenize{jbook_example:large-sd}]{Figure \ref{\detokenize{jbook_example:large-sd}}: \nameref{\detokenize{jbook_example:large-sd}}}. we
 consider the sample standard deviation of the number of horses
-during the same time span as Fig. 1.
+during the same time span as \hyperref[\detokenize{jbook_example:horse-pops}]{Figure \ref{\detokenize{jbook_example:horse-pops}}: \nameref{\detokenize{jbook_example:horse-pops}}}.
 
 \begin{figure}[htbp]
 \centering
 \capstart
 
-\noindent\sphinxincludegraphics[width=200\sphinxpxdimen]{{horse_pop_plot_largest_sd}.png}
+\noindent\sphinxincludegraphics[width=500\sphinxpxdimen]{{horse_pop_plot_largest_sd}.png}
 \caption{Horse populations for the province with the largest standard deviation}\label{\detokenize{jbook_example:large-sd}}\end{figure}
 
 \sphinxAtStartPar
 In \hyperref[\detokenize{jbook_example:large-sd}]{Figure \ref{\detokenize{jbook_example:large-sd}}: \nameref{\detokenize{jbook_example:large-sd}}} we zoom in
-on the province of ?, which had the largest spread of values in
+on the province of \DUrole{pasted-text}{Saskatchewan}, which had the largest spread of values in
 terms of standard deviation.
 
 \begin{sphinxthebibliography}{RCTeam19}

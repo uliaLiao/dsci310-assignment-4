@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.22)  16 MAR 2023 14:00
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.2.22)  16 MAR 2023 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1358,18 +1358,18 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 148.
  [1]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 196.
+(Font)              scaled to size 7.00075pt on input line 189.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 196.
+(Font)              scaled to size 6.99925pt on input line 189.
 File: horse_pop_plot_largest_sd.png Graphic file (type bmp)
 <horse_pop_plot_largest_sd.png>
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 []\TU/FreeSerif(0)/m/n/10 the Government of Canada. Horses, number on farms at june 1 and at december
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 \TU/FreeSerif(0)/m/n/10 1. Open Government - Open Data, 2017. URL: [][]$[][][][][] [] [] [] [][][][] [] [][][][][][] [] [][] [] [][][][] [] [][] [] [][][][][][][] []
  []
 
@@ -1456,10 +1456,10 @@ Package rerunfilecheck Info: File `python.out' has not changed.
 (rerunfilecheck)             Checksum: 39BF9232DEEE5050524D86174D09AF0B;48.
  ) 
 Here is how much of TeX's memory you used:
- 43171 strings out of 478687
- 1007603 string characters out of 5847106
+ 43172 strings out of 478687
+ 1007633 string characters out of 5847106
  1858001 words of memory out of 5000000
- 62482 multiletter control sequences out of 15000+600000
+ 62483 multiletter control sequences out of 15000+600000
  517731 words of font info for 107 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  99i,16n,115p,744b,2269s stack positions out of 10000i,1000n,20000p,200000b,200000s
