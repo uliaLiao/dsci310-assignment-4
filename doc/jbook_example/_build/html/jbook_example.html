@@ -335,132 +335,107 @@ This is likely due to the rebound of the Canadian automotive
 industry after the Great Depression and the Second World War.
 An interesting follow-up visualisation would be car sales per year for each
 Province over the time period visualised above to further support this hypothesis.</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">horses_sd</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../../results/horses_sd.csv&quot;</span><span class="p">)</span>
 
 <span class="n">largest_sd_prov</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">horses_sd</span><span class="p">[</span><span class="s1">&#39;Province&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;largest-sd-prov&quot;</span><span class="p">,</span> <span class="n">largest_sd_prov</span><span class="p">)</span>
 
-<span class="n">horses_sd_noindex</span> <span class="o">=</span> <span class="n">horses_sd</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
-<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;horses-tbl&quot;</span><span class="p">,</span> <span class="n">horses_sd_noindex</span><span class="p">)</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;largest-sd-prov&quot;</span><span class="p">,</span> <span class="n">largest_sd_prov</span><span class="p">,</span><span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;horses-tbl&quot;</span><span class="p">,</span> <span class="n">horses_sd</span><span class="p">,</span><span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Saskatchewan&#39;
-</pre></div>
-</div>
-<div class="output text_html"><style type="text/css">
-</style>
-<table id="T_1f85f">
-  <thead>
-    <tr>
-      <th id="T_1f85f_level0_col0" class="col_heading level0 col0" >Province</th>
-      <th id="T_1f85f_level0_col1" class="col_heading level0 col1" >Std</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td id="T_1f85f_row0_col0" class="data row0 col0" >Saskatchewan</td>
-      <td id="T_1f85f_row0_col1" class="data row0 col1" >377265.575896</td>
-    </tr>
-    <tr>
-      <td id="T_1f85f_row1_col0" class="data row1 col0" >Ontario</td>
-      <td id="T_1f85f_row1_col1" class="data row1 col1" >266435.317269</td>
-    </tr>
-    <tr>
-      <td id="T_1f85f_row2_col0" class="data row2 col0" >Alberta</td>
-      <td id="T_1f85f_row2_col1" class="data row2 col1" >266063.191824</td>
-    </tr>
-    <tr>
-      <td id="T_1f85f_row3_col0" class="data row3 col0" >Manitoba</td>
-      <td id="T_1f85f_row3_col1" class="data row3 col1" >122403.871037</td>
-    </tr>
-    <tr>
-      <td id="T_1f85f_row4_col0" class="data row4 col0" >Quebec</td>
-      <td id="T_1f85f_row4_col1" class="data row4 col1" >111411.104370</td>
-    </tr>
-    <tr>
-      <td id="T_1f85f_row5_col0" class="data row5 col0" >New Brunswick</td>
-      <td id="T_1f85f_row5_col1" class="data row5 col1" >22019.494316</td>
-    </tr>
-    <tr>
-      <td id="T_1f85f_row6_col0" class="data row6 col0" >Nova Scotia</td>
-      <td id="T_1f85f_row6_col1" class="data row6 col1" >19879.253759</td>
-    </tr>
-    <tr>
-      <td id="T_1f85f_row7_col0" class="data row7 col0" >British Columbia</td>
-      <td id="T_1f85f_row7_col1" class="data row7 col1" >14945.664171</td>
-    </tr>
-    <tr>
-      <td id="T_1f85f_row8_col0" class="data row8 col0" >P.E.I.</td>
-      <td id="T_1f85f_row8_col1" class="data row8 col1" >11355.747559</td>
-    </tr>
-  </tbody>
-</table>
-</div></div>
+</details>
 </div>
 <p>Suppose we were interested in looking in more closely at the
 province with the highest spread (in terms of standard deviation)
 of horse populations. We present the standard deviations here:</p>
 <figure class="align-default" id="horses-tbl-fig" style="width: 500px">
-<div class="output text_html"><style type="text/css">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
 </style>
-<table id="T_1f85f">
+<table border="1" class="dataframe">
   <thead>
-    <tr>
-      <th id="T_1f85f_level0_col0" class="col_heading level0 col0" >Province</th>
-      <th id="T_1f85f_level0_col1" class="col_heading level0 col1" >Std</th>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Province</th>
+      <th>Std</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td id="T_1f85f_row0_col0" class="data row0 col0" >Saskatchewan</td>
-      <td id="T_1f85f_row0_col1" class="data row0 col1" >377265.575896</td>
+      <th>0</th>
+      <td>Saskatchewan</td>
+      <td>377265.575896</td>
     </tr>
     <tr>
-      <td id="T_1f85f_row1_col0" class="data row1 col0" >Ontario</td>
-      <td id="T_1f85f_row1_col1" class="data row1 col1" >266435.317269</td>
+      <th>1</th>
+      <td>Ontario</td>
+      <td>266435.317269</td>
     </tr>
     <tr>
-      <td id="T_1f85f_row2_col0" class="data row2 col0" >Alberta</td>
-      <td id="T_1f85f_row2_col1" class="data row2 col1" >266063.191824</td>
+      <th>2</th>
+      <td>Alberta</td>
+      <td>266063.191824</td>
     </tr>
     <tr>
-      <td id="T_1f85f_row3_col0" class="data row3 col0" >Manitoba</td>
-      <td id="T_1f85f_row3_col1" class="data row3 col1" >122403.871037</td>
+      <th>3</th>
+      <td>Manitoba</td>
+      <td>122403.871037</td>
     </tr>
     <tr>
-      <td id="T_1f85f_row4_col0" class="data row4 col0" >Quebec</td>
-      <td id="T_1f85f_row4_col1" class="data row4 col1" >111411.104370</td>
+      <th>4</th>
+      <td>Quebec</td>
+      <td>111411.104370</td>
     </tr>
     <tr>
-      <td id="T_1f85f_row5_col0" class="data row5 col0" >New Brunswick</td>
-      <td id="T_1f85f_row5_col1" class="data row5 col1" >22019.494316</td>
+      <th>5</th>
+      <td>New Brunswick</td>
+      <td>22019.494316</td>
     </tr>
     <tr>
-      <td id="T_1f85f_row6_col0" class="data row6 col0" >Nova Scotia</td>
-      <td id="T_1f85f_row6_col1" class="data row6 col1" >19879.253759</td>
+      <th>6</th>
+      <td>Nova Scotia</td>
+      <td>19879.253759</td>
     </tr>
     <tr>
-      <td id="T_1f85f_row7_col0" class="data row7 col0" >British Columbia</td>
-      <td id="T_1f85f_row7_col1" class="data row7 col1" >14945.664171</td>
+      <th>7</th>
+      <td>British Columbia</td>
+      <td>14945.664171</td>
     </tr>
     <tr>
-      <td id="T_1f85f_row8_col0" class="data row8 col0" >P.E.I.</td>
-      <td id="T_1f85f_row8_col1" class="data row8 col1" >11355.747559</td>
+      <th>8</th>
+      <td>P.E.I.</td>
+      <td>11355.747559</td>
     </tr>
   </tbody>
 </table>
-</div><figcaption>
+</div></div><figcaption>
 <p><span class="caption-number">Fig. 2 </span><span class="caption-text">Standard deviation of number of horses for each province between 1940 - 1972</span><a class="headerlink" href="#horses-tbl-fig" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Note that we define standard deviation (of a sample) as:</p>
 <div class="math notranslate nohighlight">
-\[s = \sqrt{\sum_{i = 1}^n(x_i - \bar{x})} / {n-1}.\]</div>
-<p>Additionally, note that in <a class="reference internal" href="#large-sd"><span class="std std-numref">Figure 3: Horse populations for the province with the largest standard deviation</span></a>. we
+\[s = \sqrt{\sum_{i = 1}^n(x_i - \bar{x}) / (n-1)}.\]</div>
+<p>Additionally, note that in <a class="reference internal" href="#horses-tbl-fig"><span class="std std-numref">Figure 2: Standard deviation of number of horses for each province between 1940 - 1972</span></a>. we
 consider the sample standard deviation of the number of horses
 during the same time span as <a class="reference internal" href="#horse-pops"><span class="std std-numref">Figure 1: Horse populations for all provinces in Canada from 1906 - 1972</span></a>.</p>
 <figure class="align-default" id="large-sd">

@@ -1,11 +1,11 @@
 # Fdb version 4
-["makeindex python.idx"] 1678918584 "python.idx" "python.ind" "python" 1679010348 0
-  "python.idx" 1679010343 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex python.idx"] 1678918584 "python.idx" "python.ind" "python" 1679015722 0
+  "python.idx" 1679015717 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "python.ilg"
   "python.ind"
   (rewritten before read)
-["pdflatex"] 1679010337 "python.tex" "python.pdf" "python" 1679010348 0
+["pdflatex"] 1679015711 "python.tex" "python.pdf" "python" 1679015722 0
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1673497944 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1673497945 916 f87d7c45f9c908e672703b83b72241a3 ""
   "c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1673497945 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -243,13 +243,13 @@
   "horse_pop_plot_largest_sd.png" 1678915080 84317 d52428a1a1a42c2d4344c702918bf364 ""
   "horse_pops_plot.png" 1678915080 141245 9c51f444a5db87f80b3e997ff25592d4 ""
   "jupyterBook.cls" 1678915066 2881 d7be52eb557699167c5a8617d29c1b64 ""
-  "python.aux" 1679010346 2368 c1f11c467b8a88e1954005f2f2494af4 "pdflatex"
+  "python.aux" 1679015721 2368 c1f11c467b8a88e1954005f2f2494af4 "pdflatex"
   "python.ind" 1678918584 0 d41d8cd98f00b204e9800998ecf8427e "makeindex python.idx"
-  "python.out" 1679010346 48 39bf9232deee5050524d86174d09af0b "pdflatex"
-  "python.tex" 1679010336 10371 b2185c7acc21bd6bb48b6bece4942875 ""
-  "python.toc" 1679010346 81 99c8d2db86b47f23c6e31cb1e9ffb40e "pdflatex"
+  "python.out" 1679015721 48 39bf9232deee5050524d86174d09af0b "pdflatex"
+  "python.tex" 1679015710 9070 920076cc9b7ad72e0e09bc9bf71a40a4 ""
+  "python.toc" 1679015721 81 99c8d2db86b47f23c6e31cb1e9ffb40e "pdflatex"
   "sphinx.sty" 1678915062 12780 919e6ba449302e2597e7722681a087c6 ""
-  "sphinxhighlight.sty" 1679010335 6785 76d10c62e0f0661410b46f5db6118e26 ""
+  "sphinxhighlight.sty" 1679015710 6785 76d10c62e0f0661410b46f5db6118e26 ""
   "sphinxlatexadmonitions.sty" 1678915062 6238 2d867d769abf3f72abc17ef52adff78b ""
   "sphinxlatexcontainers.sty" 1678915062 901 d3a3a1b7b2547f47ade2499350b5c420 ""
   "sphinxlatexgraphics.sty" 1678915062 4840 a9578332b6f3b35e198751fb632c9b79 ""
@@ -264,7 +264,7 @@
   "sphinxlatexstyletext.sty" 1678915062 6177 c18841ce3fafc366cd3b145f8faa4c37 ""
   "sphinxlatextables.sty" 1678915062 21848 2827eb0b11b99b185a8b77317d3e131c ""
   "sphinxmanual.cls" 1678915062 4241 7b0d7a37df7b5715fb0dbd585c52ecdb ""
-  "sphinxmessages.sty" 1679010336 765 3f5fcd6cdd7964ed608767954a8ced6f ""
+  "sphinxmessages.sty" 1679015710 765 3f5fcd6cdd7964ed608767954a8ced6f ""
   "sphinxoptionsgeometry.sty" 1678915062 2061 47bb34b8ed8a78823eb0c886abfb9f4d ""
   "sphinxoptionshyperref.sty" 1678915062 1094 79beb8b8a3f10784f8cce804e0f9d3aa ""
   "sphinxpackagefootnote.sty" 1678915062 15217 dd26fe418b6fb1b26b18f042a7f43d40 ""

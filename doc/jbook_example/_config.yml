@@ -1,27 +1,10 @@
-# title: "DSCI 310: Historical Horse Population in Canada"
-# author: "Tiffany Timbers & Jordan Bourak"
-# date: "2021-11-22"
-# sphinx:
-#   config:
-#     bibtex_reference_style: author_year
-# execute:
-#   execute_notebooks: force 
-# bibtex_bibfiles:
-#     - references.bib
-
 title: "DSCI 310: Historical Horse Population in Canada"
 author: "Tiffany Timbers & Jordan Bourak"
 date: "2021-11-22"
 sphinx:
-  extra_navbar:
-    search: true
-    toc: true
-    options:
-      navbar_end: true
-      sticky: true
-  builder: html
   config:
     bibtex_reference_style: author_year
+    latex_engine: pdflatex
     html_theme_options:
       navbar_title: "DSCI 310: Historical Horse Population in Canada"
       navbar_site_name: false
@@ -30,13 +13,7 @@ sphinx:
           label: "Home"
         - doc: contents
           label: "Table of Contents"
-html_sidebars:
-  index:
-    - globaltoc.html
-  contents:
-    - globaltoc.html
 execute:
   execute_notebooks: force 
 bibtex_bibfiles:
-  - references.bib
-
+    - references.bib

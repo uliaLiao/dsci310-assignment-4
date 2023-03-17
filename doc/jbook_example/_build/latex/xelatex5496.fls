@@ -1,0 +1,5 @@
+PWD C:/Users/Julia Liao/Desktop/dsci310/assignments/dsci310-assignment04/dsci310-assignment-4/doc/jbook_example/_build/latex
+INPUT c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf.cnf
+INPUT c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-dist/web2c/texmf.cnf
+INPUT c:/Users/Julia Liao/AppData/Roaming/TinyTeX/texmf-var/web2c/xetex/xelatex.fmt
+INPUT python.tex

@@ -142,34 +142,6 @@ industry after the Great Depression and the Second World War.
 An interesting follow\sphinxhyphen{}up visualisation would be car sales per year for each
 Province over the time period visualised above to further support this hypothesis.
 
-\begin{sphinxuseclass}{cell}\begin{sphinxVerbatimInput}
-
-\begin{sphinxuseclass}{cell_input}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{n}{horses\PYGZus{}sd} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{../../results/horses\PYGZus{}sd.csv}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-
-\PYG{n}{largest\PYGZus{}sd\PYGZus{}prov} \PYG{o}{=} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{horses\PYGZus{}sd}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Province}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}
-\PYG{n}{glue}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{largest\PYGZhy{}sd\PYGZhy{}prov}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{largest\PYGZus{}sd\PYGZus{}prov}\PYG{p}{)}
-
-\PYG{n}{horses\PYGZus{}sd\PYGZus{}noindex} \PYG{o}{=} \PYG{n}{horses\PYGZus{}sd}\PYG{o}{.}\PYG{n}{style}\PYG{o}{.}\PYG{n}{hide}\PYG{p}{(}\PYG{n}{axis}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{index}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{n}{glue}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{horses\PYGZhy{}tbl}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{horses\PYGZus{}sd\PYGZus{}noindex}\PYG{p}{)}
-\end{sphinxVerbatim}
-
-\end{sphinxuseclass}\end{sphinxVerbatimInput}
-\begin{sphinxVerbatimOutput}
-
-\begin{sphinxuseclass}{cell_output}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYGZsq{}Saskatchewan\PYGZsq{}
-\end{sphinxVerbatim}
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYGZlt{}pandas.io.formats.style.Styler at 0x141ef713d30\PYGZgt{}
-\end{sphinxVerbatim}
-
-\end{sphinxuseclass}\end{sphinxVerbatimOutput}
-
-\end{sphinxuseclass}
 \sphinxAtStartPar
 Suppose we were interested in looking in more closely at the
 province with the highest spread (in terms of standard deviation)
@@ -180,17 +152,26 @@ of horse populations. We present the standard deviations here:
 \capstart
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYGZlt{}pandas.io.formats.style.Styler at 0x141ef713d30\PYGZgt{}
+           Province            Std
+0      Saskatchewan  377265.575896
+1           Ontario  266435.317269
+2           Alberta  266063.191824
+3          Manitoba  122403.871037
+4            Quebec  111411.104370
+5     New Brunswick   22019.494316
+6       Nova Scotia   19879.253759
+7  British Columbia   14945.664171
+8            P.E.I.   11355.747559
 \end{sphinxVerbatim}
 \caption{Standard deviation of number of horses for each province between 1940 \sphinxhyphen{} 1972}\label{\detokenize{jbook_example:horses-tbl-fig}}\end{figure}
 
 \sphinxAtStartPar
 Note that we define standard deviation (of a sample) as:
 \begin{equation*}
-\begin{split}s = \sqrt{\sum_{i = 1}^n(x_i - \bar{x})} / {n-1}.\end{split}
+\begin{split}s = \sqrt{\sum_{i = 1}^n(x_i - \bar{x}) / (n-1)}.\end{split}
 \end{equation*}
 \sphinxAtStartPar
-Additionally, note that in \hyperref[\detokenize{jbook_example:large-sd}]{Figure \ref{\detokenize{jbook_example:large-sd}}: \nameref{\detokenize{jbook_example:large-sd}}}. we
+Additionally, note that in \hyperref[\detokenize{jbook_example:horses-tbl-fig}]{Figure \ref{\detokenize{jbook_example:horses-tbl-fig}}: \nameref{\detokenize{jbook_example:horses-tbl-fig}}}. we
 consider the sample standard deviation of the number of horses
 during the same time span as \hyperref[\detokenize{jbook_example:horse-pops}]{Figure \ref{\detokenize{jbook_example:horse-pops}}: \nameref{\detokenize{jbook_example:horse-pops}}}.
 
